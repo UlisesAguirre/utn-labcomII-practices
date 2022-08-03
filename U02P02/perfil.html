@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+<body>
+    <h1>Datos del perfil</h1>
+
+    <form>
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <input type="text" name="perfil.Estudiante" value="ESTUDIANTE" id="perfil.Estudiante" readonly>
+            <br><br>
+
+            <label for="perfil.NombreCompleto">Nombre completo:</label>
+            <input type="text" name="perfil.NombreCompleto" id="perfil.NombreCompleto">
+            <br><br>
+            
+            <label for="perfil.Email">Email:</label>
+            <input type="email" name="perfil.Email" id="perfil.Email" placeholder="usuario@outlook.com">
+            <br><br>
+            
+            <label for="perfil.Edad">Edad:</label>
+            <input type="number" name="perfil.Edad" id="perfil.Edad">
+            <br><br>
+            
+            <label for="perfil.Nacionalidad">Nacionalidad:</label>
+            <select name="perfil.Nacionalidad" id="perfil.Nacionalidad">
+                <option value="arg">Argentino</option>
+                <option value="br">Brasileño</option>
+                <option value="cl">Chileno</option>
+            </select>
+            <br><br>
+            
+            <label for="perfil.Laboral">Condicion laboral:</label>
+            <select name="perfil.Laboral" id="perfil.Laboral">
+                <option value="desempleado">Desempleado</option>
+                <option value="busqueda">En busqueda laboral</option>
+                <option value="partTime">Trabajo Part-time</option>
+                <option value="fullTime">Trabajo Full-time</option>
+            </select>
+            <br><br>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Gustos personales</legend>
+
+            <label for="perfil.Musica">Gustos musicales:</label>
+            <input type="text" name="perfil.Musica" id="perfil.Musica">
+            <br><br>
+
+            <label for="perfil.comida">Comida preferida:</label>
+            <select name="perfil.comida" id="perfil.comida">
+                <option value="hamburguesa">Hamburguesa</option>
+                <option value="milanesa">Milanesa</option>
+                <option value="pastas">Pastas</option>
+                <option value="pizza">Pizza</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <button>Enviar formulario</button>
+        <br><br>
+        <label for="perfil.RecordarDatos">Recordar datos de usuario</label>
+        <input type="checkbox" name="perfil.RecordarDatos" id="perfil.RecordarDatos">
+    </form>
+</body>
+</html>
