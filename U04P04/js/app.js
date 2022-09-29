@@ -16,7 +16,6 @@ function contador() {
     contador.innerText = contLocal
 }
 
-//No funciona esta funcion
 function contador2() {
     var contador = document.getElementById('valorSession')
     if (contSession == 0) {

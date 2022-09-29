@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Pre-parcial 02</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <form class="formulario">
+            <label for="monto">Ingrese cantidad de pesos a convertir:</label>
+            <input type="number" name="monto" id="monto" placeholder="$">
+            <label for="tipoMoneda">Moneda a convertir:</label>
+            <select name="tipoMoneda" id="moneda">
+                <option value="0" class="opcion1">Elija una opción</option>
+                <option value="146" class="dolares">Dolares(USD)</option>
+                <option value="140" class="euros">Euros(EUR)</option>
+            </select>
+            <input type="button" class="boton" value="Calcular">
+            <p id="resultado-p"></p>
+        </form>
+        <h2>Añadir una moneda:</h2>
+        <form class="formulario2">
+            <label for="monedaNueva">Ingrese nombre de la nueva moneda:</label>
+            <input type="text" name="monedaNueva" id="monedaNueva" placeholder="Ej: Dolar australiano">
+            <label for="costoConversion">Ingrese el costo de conversión de la nueva moneda:</label>
+            <input type="number" name="costoConversion" id="costoConversion" placeholder="$">
+            <input type="button" class="boton2" value="Agregar">
+            <p id="resultado-p2"></p>
+        </form>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

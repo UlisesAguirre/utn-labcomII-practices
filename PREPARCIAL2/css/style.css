@@ -1,0 +1,13 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.formulario, .formulario2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+input, select {
+    margin-bottom: 1rem;
+}
